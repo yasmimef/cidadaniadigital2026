@@ -3,54 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Moderno</title>
+    <title>Nexus Design | Agência Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">Meu<span>Site</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <header id="mainHeader">
+        <div class="container header-wrapper">
+            <div class="logo">
+                NEXUS<span>.</span>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
+            <div class="nav-cta">
+                <a href="#contato" class="btn btn-outline">Orçamento</a>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="container">
-            <h1>Criando Soluções Digitais Incríveis</h1>
-            <p>Desenvolvimento web rápido, responsivo e elegante para o seu negócio.</p>
-            <button id="btnAcao" class="btn">Saiba Mais</button>
-        </div>
-    </section>
-
-    <section id="servicos" class="services">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <h3>Design Responsivo</h3>
-                    <p>Sites que se adaptam perfeitamente a qualquer tela de celular ou computador.</p>
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">Inovação & Performance</span>
+                    <h1>Construímos a presença digital do seu negócio</h1>
+                    <p>Combinamos design sofisticado, engenharia de software avançada e otimização para motores de busca para fazer sua empresa escalar no ecossistema digital.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="150">0+</h3>
+                            <p>Projetos Entregues</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="99">0%</h3>
+                            <p>Satisfação</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="12">0M+</h3>
+                            <p>ROI Gerado</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Performance</h3>
-                    <p>Código otimizado para garantir a velocidade e a melhor experiência do usuário.</p>
-                </div>
-                <div class="card">
-                    <h3>SEO</h3>
-                    <p>Estratégias para que sua página seja encontrada facilmente nos buscadores.</p>
+                <div class="hero-visual">
+                    <div class="abstract-shape shape-1"></div>
+                    <div class="abstract-shape shape-2"></div>
+                    <div class="hero-card">
+                        <div class="card-header"><span></span><span></span><span></span></div>
+                        <div class="card-body-mock">
+                            <div class="line long"></div>
+                            <div class="line medium"></div>
+                            <div class="line short"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O que fazemos de melhor</h2>
+                    <p>Soluções ponta a ponta para transformar ideias abstratas em produtos altamente lucrativos e escaláveis.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">✦</div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Aplicações robustas baseadas em código limpo, componentizado e de altíssima velocidade de carregamento.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✧</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Criação de interfaces elegantes, intuitivas e focadas na melhor experiência de navegação para o usuário final.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>SEO & Analytics</h3>
+                        <p>Otimização técnica cirúrgica para ranquear seu negócio no topo das buscas do Google de forma orgânica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Portfólio em Destaque</h2>
+                    <p>Explore alguns dos nossos trabalhos mais recentes desenvolvidos para grandes marcas digitais.</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background: linear-gradient(45deg, #6a11cb, #2575fc);"></div>
+                        <div class="portfolio-info">
+                            <span>Fintech</span>
+                            <h3>E-Wallet Apex</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background: linear-gradient(45deg, #ff416c, #ff4b2b);"></div>
+                        <div class="portfolio-info">
+                            <span>E-Commerce</span>
+                            <h3>Vanguard Store</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="portfolio-img" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                        <div class="portfolio-info">
+                            <span>SaaS</span>
+                            <h3>Matrix Analytics</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Quem confia no nosso código</h2>
+                    <p>Histórias de sucesso de parceiros que transformaram seus ecossistemas conosco.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"A Nexus entregou nossa plataforma três semanas antes do prazo com uma performance absurda. Nossa taxa de conversão subiu 40%."</p>
+                        <div class="user-info">
+                            <div class="avatar">AM</div>
+                            <div>
+                                <h4>Amanda Martins</h4>
+                                <small>CTO na TechFuture</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"O nível de detalhamento estético e a velocidade do site final superaram todas as expectativas da nossa equipe de marketing."</p>
+                        <div class="user-info">
+                            <div class="avatar">RG</div>
+                            <div>
+                                <h4>Rodrigo Guerra</h4>
+                                <small>Diretor de Produto na Elevate</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container contact-grid">
+                <div class="contact-text">
+                    <h2>Vamos iniciar um projeto juntos?</h2>
+                    <p>Preencha os dados ao lado e nossa equipe de engenharia entrará em contato em menos de 24 horas úteis.</p>
+                    <div class="contact-details">
+                        <p><strong>E-mail:</strong> contato@nexusdesign.com</p>
+                        <p><strong>Telefone:</strong> (41) 99999-0000</p>
+                        <p><strong>Localização:</strong> Curitiba, PR</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" required placeholder="Ex: João Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" required placeholder="joao@empresa.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Fale sobre o projeto</label>
+                            <textarea id="message" rows="4" required placeholder="Como podemos ajudar o seu negócio?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar Proposta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo">NEXUS<span>.</span></div>
+                <p>Desenvolvendo as aplicações web do amanhã, com foco implacável em performance, segurança e design responsivo.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nexus Design. Criado com maestria digital.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
